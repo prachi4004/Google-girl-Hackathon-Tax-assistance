@@ -22,28 +22,26 @@ A web-based AI-powered Tax Assistant that automates **tax filing**, **simplifies
 
 ## 🔧 Installation Guide
 ### **1️⃣ Clone the Repository**
-```sh
-git clone https://github.com/your-repo/ai-tax-assistant.git
-cd ai-tax-assistant
+https://github.com/prachi4004/Google-girl-Hackathon-Tax-assistance.git
 
 2️⃣ Install Backend Dependencies
-sh
-cd backend
 pip install -r requirements.txt
+
 3️⃣ Install Frontend Dependencies
-sh
-cd ../frontend
 npm install
+
 4️⃣ Set Up OpenAI API Key
 Create a .env file in the backend/ directory.
 Add your OpenAI API key:
 env
 OPENAI_API_KEY=your_api_key_here
+
 5️⃣ Start Backend (Flask)
 sh
 cd backend
 python app.py
 Server runs at: http://127.0.0.1:5000
+
 6️⃣ Start Frontend (React)
 sh
 cd frontend
