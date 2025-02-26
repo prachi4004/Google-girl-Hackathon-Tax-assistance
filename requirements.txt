@@ -1,0 +1,5 @@
+Flask
+Flask-CORS
+python-dotenv
+openai
+pdfplumber

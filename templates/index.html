@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tax Assistant</title>
+    <script>
+        async function uploadFile() {
+            let formData = new FormData();
+            formData.append("file", document.getElementById("file").files[0]);
+
+            let response = await fetch("/upload", { method: "POST", body: formData });
+            let result = await response.json();
+            document.getElementById("output").innerText = JSON.stringify(result, null, 2);
+        }
+
+        async function askChatbot() {
+            let query = document.getElementById("chatInput").value;
+            let response = await fetch("/chat", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ query })
+            });
+            let result = await response.json();
+            document.getElementById("chatOutput").innerText = result.response;
+        }
+    </script>
+</head>
+<body>
+    <h1>AI Tax Assistant</h1>
+    <input type="file" id="file">
+    <button onclick="uploadFile()">Upload</button>
+    <pre id="output"></pre>
+
+    <h2>Ask AI</h2>
+    <input type="text" id="chatInput">
+    <button onclick="askChatbot()">Ask</button>
+    <pre id="chatOutput"></pre>
+</body>
+</html>
