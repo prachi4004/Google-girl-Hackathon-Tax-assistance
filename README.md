@@ -37,8 +37,7 @@ npm install
 4️⃣ Set Up OpenAI API Key
 Create a .env file in the backend/ directory.
 Add your OpenAI API key:
-env
-OPENAI_API_KEY=your_api_key_here
+<pre> ```env OPENAI_API_KEY=your_api_key_here ``` </pre>
 
 5️⃣ Start Backend (Flask)
 ```bash
