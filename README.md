@@ -25,10 +25,14 @@ A web-based AI-powered Tax Assistant that automates **tax filing**, **simplifies
 https://github.com/prachi4004/Google-girl-Hackathon-Tax-assistance.git
 
 2️⃣ Install Backend Dependencies
+```bash
 pip install -r requirements.txt
+```
 
 3️⃣ Install Frontend Dependencies
+```bash
 npm install
+```
 
 4️⃣ Set Up OpenAI API Key
 Create a .env file in the backend/ directory.
@@ -37,15 +41,17 @@ env
 OPENAI_API_KEY=your_api_key_here
 
 5️⃣ Start Backend (Flask)
-sh
+```bash
 cd backend
 python app.py
+```
 Server runs at: http://127.0.0.1:5000
 
 6️⃣ Start Frontend (React)
-sh
+```bash
 cd frontend
 npm start
+```
 App runs at: http://localhost:3000
 
 📂 Project Structure
